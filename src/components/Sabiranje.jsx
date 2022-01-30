@@ -34,7 +34,7 @@ export default function Sabiranje() {
     setRes(novaMatrica)
   }
   return (
-    <div className='container mt-2'>
+    <div className=' mt-2'>
       <h1 className='text-center'>Sabiranje matrica</h1>
       <div className='mt-2 d-flex justify-content-center'>
         <DimenzijaInput value={brojRedova} onChange={setBrojRedova} label='M' />
@@ -42,11 +42,11 @@ export default function Sabiranje() {
       </div>
       <div className='row mt-5'>
         <div className='col-3  d-flex align-items-center justify-content-center display-4'>
-          <Matrica podaci={prvaMatrica} onChange={updateMatrica(setPrvaMatrica)} />
+          <Matrica sufiks='M x N' podaci={prvaMatrica} onChange={updateMatrica(setPrvaMatrica)} />
         </div>
         <div className='col-1 d-flex align-items-center justify-content-center display-4'>+</div>
         <div className='col-3  d-flex align-items-center justify-content-center display-4'>
-          <Matrica podaci={drugaMatrica} onChange={updateMatrica(setDrugaMatrica)} />
+          <Matrica sufiks='M x N' podaci={drugaMatrica} onChange={updateMatrica(setDrugaMatrica)} />
         </div>
         <div className='col-1 d-flex align-items-center justify-content-center display-4'>
           <button onClick={izracunajMatricu} className='btn'>=</button>
@@ -54,7 +54,7 @@ export default function Sabiranje() {
         {
           res && (
             <div className='col-3 d-flex align-items-center justify-content-center display-4'>
-              <Matrica readOnly podaci={res} />
+              <Matrica sufiks='M x N' readOnly podaci={res} />
             </div>
           )
         }
