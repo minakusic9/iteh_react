@@ -5,7 +5,7 @@ export default function Celija({ vrednost, onChange, readOnly }) {
     <div className='celija'>
       {
         readOnly ? (
-          <span>{vrednost}</span>
+          <span className='basic form-control'>{vrednost}</span>
         ) : (
           <input type="text" className='form-control basic' value={vrednost} onChange={e => {
 

@@ -45,11 +45,13 @@
 }
 .celija {
   flex: 1;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .basic {
+  max-width: 50px;
   border: none;
   background-color: white;
 }
