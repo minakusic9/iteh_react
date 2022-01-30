@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route to='/' element={<Sabiranje />} />
-        <Route to='/mnozenje' element={<Mnozenje />} />
+        <Route path='/' element={(<Sabiranje />)} />
+        <Route path='/mnozenje' element={(<Mnozenje />)} />
       </Routes>
     </BrowserRouter>
   );

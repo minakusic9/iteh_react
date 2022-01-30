@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.red {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+.celija {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.basic {
+  border: none;
+  background-color: white;
+}
